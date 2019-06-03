@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/poetry/poetry",
+    "pages/word/word"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "一文，一诗，一句",
+    "navigationBarTextStyle": "black"
+  },
+    "tabBar": {
+      "color": "#dddddd",
+      "selectedColor": "#3cc51f",
+      "borderStyle": "white",
+      "backgroundColor": "#ffffff",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "iconPath": "image/article_unselect.png",
+          "selectedIconPath": "image/article_select.png",
+          "text": "文"
+        },
+        {
+          "pagePath": "pages/poetry/poetry",
+          "iconPath": "image/poetry_unselect.png",
+          "selectedIconPath": "image/poetry_select.png",
+          "text": "诗"
+        },
+        {
+          "pagePath": "pages/word/word",
+          "iconPath": "image/word_unselect.png",
+          "selectedIconPath": "image/word_select.png",
+          "text": "句"
+        }
+
+      ]
+    },
+  "sitemapLocation": "sitemap.json"
+}

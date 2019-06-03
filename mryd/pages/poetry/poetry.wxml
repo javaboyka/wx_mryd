@@ -1,0 +1,36 @@
+<!--text.wxml-->
+<!-- <view class="grid"> -->
+    <!--hotwords list-->
+    <!-- <view id="wordscard">
+      <view >
+        <icon type="{{icontype[0]}}" size="15"/>
+        <text>HOTWORDS</text>
+        <icon type="{{icontype[0]}}" size="15"/>
+      </view>
+      <view class="rowalign">
+        <text wx:for="{{data.hotwords}}">{{item.word}}</text>
+      </view>
+    </view> -->
+
+    <!--hot news list-->
+    <view class="card-poetry">
+        <!-- <image class='bg-img' style='width: 100%;height:100%;background-color: #eeeeee;' url='../../image/tbtypebg.png' mode="aspectFit"></image> -->
+        <view><text class="title">{{ data.poetryCtx.title }}</text></view>
+        <view><text class="authors">{{ data.poetryCtx.author }}  {{ data.poetryCtx.dynasty }}</text></view>
+        <view class="content" wx:for="{{data.poetryCtx.content}}" wx:for-index="itemIndex" wx:key="id">
+          <text class="content-item">{{ item }}</text>
+        </view>
+        <view class="divLine"></view>
+        <view class="layout_horizontal">
+          <button class='shareBtn' open-type='share' plain='{{ plain }}'>
+            <image class='btnImg' src='../../image/share.png'></image>
+            <view class='btnText'>分享好友</view>
+          </button>
+          <button class='randomBtn' plain='{{ plain }}' catchtap="onRandomTap">
+            <image class='btnImg' src='../../image/random.png'></image>
+            <view class='btnText'>随机一篇</view>
+          </button>
+        </view>
+        <view><text class="tips">下拉可刷新文字</text></view>
+    </view>
+<!-- </view> -->

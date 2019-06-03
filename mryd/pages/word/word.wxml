@@ -1,0 +1,11 @@
+<!--word.wxml-->
+<view class="card-poetry">
+    <view class="userinfo-avatar">
+      <open-data  type="userAvatarUrl"></open-data>
+    </view>
+    <view><text class="content">{{ data.mContent.hitokoto }}</text></view>
+    <!-- <open-data type="userAvatarUrl"></open-data>
+    <open-data type="userNickName" lang="zh_CN"></open-data> -->
+    <!-- <view><text class="authors">{{ data.mContent.from }}</text></view> -->
+    <view><text class="tips">下拉可刷新文字</text></view>
+</view>
